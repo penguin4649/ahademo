@@ -55,7 +55,7 @@ const customTheme = (outerTheme) =>
 
 export default function Password() {
   const [password, setPassword] = React.useState("")
-  const [modalSwitch, setModalSwitch] = React.useState(false);
+  const [modalSwitch, setModalSwitch] = React.useState(true);
 
   const [hasUppercase, setHasUppercase] = React.useState(false);
   const [hasLowercase, setHasLowercase] = React.useState(false);
@@ -132,16 +132,17 @@ export default function Password() {
                 left: 0,
                 borderRadius: '8px',
                 backgroundColor: '#242424',
-                zIndex:1
+                zIndex:1,
+                minWidth:'335px'
               }}>
                 <ListItem>
                   <ListItemAvatar sx={{ minWidth: 40 }}>
-                    <Avatar src={hasUppercase ? blImg : grImg} sx={{ width: 24, height: 24 }}>
+                    <Avatar src={hasUppercase ? blImg : grImg} sx={{ width: 20, height: 20 }}>
                     </Avatar>
                   </ListItemAvatar>
                   <ListItemText
                     primary={
-                      <Typography sx={{ fontSize: '12px', textAlign: 'left' }}>
+                      <Typography sx={{ fontSize: '14px', textAlign: 'left' }}>
                         Havd at least one uppercase letter
                       </Typography>
                     }
@@ -149,12 +150,12 @@ export default function Password() {
                 </ListItem>
                 <ListItem>
                   <ListItemAvatar sx={{ minWidth: 40 }}>
-                    <Avatar src={hasLowercase ? blImg : grImg} sx={{ width: 24, height: 24 }}>
+                    <Avatar src={hasLowercase ? blImg : grImg} sx={{ width: 20, height: 20 }}>
                     </Avatar>
                   </ListItemAvatar>
                   <ListItemText
                     primary={
-                      <Typography sx={{ fontSize: '12px', textAlign: 'left' }}>
+                      <Typography sx={{ fontSize: '14px', textAlign: 'left' }}>
                         Havd at least one lowercase letter
                       </Typography>
                     }
@@ -162,12 +163,12 @@ export default function Password() {
                 </ListItem>
                 <ListItem>
                   <ListItemAvatar sx={{ minWidth: 40 }}>
-                    <Avatar src={hasNumber ? blImg : grImg} sx={{ width: 24, height: 24 }}>
+                    <Avatar src={hasNumber ? blImg : grImg} sx={{ width: 20, height: 20 }}>
                     </Avatar>
                   </ListItemAvatar>
                   <ListItemText
                     primary={
-                      <Typography sx={{ fontSize: '12px', textAlign: 'left' }}>
+                      <Typography sx={{ fontSize: '14px', textAlign: 'left' }}>
                         Havd at least one number
                       </Typography>
                     }
@@ -175,25 +176,25 @@ export default function Password() {
                 </ListItem>
                 <ListItem>
                   <ListItemAvatar sx={{ minWidth: 40 }}>
-                    <Avatar src={hasSpecialChar ? blImg : grImg} sx={{ width: 24, height: 24 }}>
+                    <Avatar src={hasSpecialChar ? blImg : grImg} sx={{ width: 20, height: 20 }}>
                     </Avatar>
                   </ListItemAvatar>
                   <ListItemText
                     primary={
-                      <Typography sx={{ fontSize: '12px', textAlign: 'left' }}>
-                        Havd at least one special character(!@#&...etc)
+                      <Typography sx={{ fontSize: '14px', textAlign: 'left' }}>
+                        Havd at least one special character<br />(!@#&...etc)
                       </Typography>
                     }
                   />
                 </ListItem>
                 <ListItem>
                   <ListItemAvatar sx={{ minWidth: 40 }}>
-                    <Avatar src={isLengthValid ? blImg : grImg} sx={{ width: 24, height: 24 }}>
+                    <Avatar src={isLengthValid ? blImg : grImg} sx={{ width: 20, height: 20 }}>
                     </Avatar>
                   </ListItemAvatar>
                   <ListItemText
                     primary={
-                      <Typography sx={{ fontSize: '12px', textAlign: 'left' }}>
+                      <Typography sx={{ fontSize: '14px', textAlign: 'left' }}>
                         Longer than 8 characters
                       </Typography>
                     }
