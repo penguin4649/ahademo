@@ -8,6 +8,9 @@ function App() {
       <header className="App-header">
         <Password/>
       </header>
+      <header className="App-header">
+        <Date/>
+      </header>
     </div>
   );
 }
