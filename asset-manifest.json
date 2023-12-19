@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/penguin4649/ahademo/static/css/main.62e991a7.css",
+    "main.js": "/penguin4649/ahademo/static/js/main.12dfe8a0.js",
+    "static/js/787.1d4cd684.chunk.js": "/penguin4649/ahademo/static/js/787.1d4cd684.chunk.js",
+    "index.html": "/penguin4649/ahademo/index.html",
+    "static/media/gr.svg": "/penguin4649/ahademo/static/media/gr.103508fa01d34d2ec1c2cd50fd255e59.svg",
+    "static/media/bl.svg": "/penguin4649/ahademo/static/media/bl.c27051bb368e9ddac09a08bd467d7b0d.svg",
+    "main.62e991a7.css.map": "/penguin4649/ahademo/static/css/main.62e991a7.css.map",
+    "main.12dfe8a0.js.map": "/penguin4649/ahademo/static/js/main.12dfe8a0.js.map",
+    "787.1d4cd684.chunk.js.map": "/penguin4649/ahademo/static/js/787.1d4cd684.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62e991a7.css",
+    "static/js/main.12dfe8a0.js"
+  ]
+}
